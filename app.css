@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    padding: 20px;
+}
+
+.image-slider{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.image-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.image-title{
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(122, 84, 84);
+}
+
+.slick-arrow{
+    /* abscentery code tắt */
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    line-height: 1;
+}
+
+.slick-arrow:hover{
+    background-color: #2cccff;
+    color: white;
+}
+
+.slick-prev{
+    left: 0;
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px; /* khoảng cách các elements*/
+}
+
+.slick-dots button{
+    border-radius: 50%;
+    font-size: 0;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    width: 18px;
+    height: 18px;
+    transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button{
+    background-color: #2cccff;
+
+}
